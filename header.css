@@ -1,0 +1,98 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+
+
+body > div{
+    border: px grey solid;
+    opacity: 10%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+nav{
+    padding-right: 50px;
+}
+
+header > div{
+    display: flex;
+    align-items:center;
+    gap: 3px;
+}
+
+header ul{
+    display: flex;
+    gap: 50px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+nav li > a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav li div > a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li > a:hover{
+    background-color: rgb(223, 223, 223);
+    border-bottom: 2px black solid;
+}
+
+header > a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(100, 123, 198);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+
+header li{
+    list-style-type: none;
+}
+
+nav  li:hover .sous-menu{
+    display: flex;
+    
+}
+
+.sous-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(223, 223, 223);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-direction: column;
+    margin-top: 11px;
+}
+
+.sous-menu a{
+    padding: 10px;
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+    
+}
+
+.sous-menu a:last-child{
+    border-radius: 15px;
+}
+
+.sous-menu a:hover{
+    border-bottom: 2px black solid;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="JDV.css">
+</head>
+<body>
+    
+    <header>
+        <div>
+        <h1>Portfolio </h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                    <a href="">Mes Projets</a>
+                    <div class="sous-menu">
+                        <a href="chat.html">Chatbot</a>
+                        <a href="JDV.html">Jeu de la vie</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        
+        </div>
+        <a href="contact.html">Contact</a>
+    </header>
+    <div></div>
+    <main>
+        <span class="c1"></span>
+        <span class="c2"></span>
+        <span class="c3"></span>
+
+        <span class="c4"></span>
+        <span class="c5"></span>
+        <span class="c6"></span>
+
+        <span class="c7">Les différentes sauvegardes</span>
+        <span class="c8">Grille où se déroule le jeu</span>
+        <span class="c9">Les différents boutons</span>
+                
+        <h2>Jeu de la vie</h2>
+        <p>
+            En terminale, j’ai développé une version du Jeu de la vie en python avec le module pygame. Ce projet permet non seulement de simuler et jouer au Jeu de la vie, mais aussi d’interagir avec la simulation grâce à plusieurs fonctionnalités : mise en pause, modification de la vitesse d’exécution, sauvegarde de configurations de cellules, rechargement de dispositions enregistrées ainsi que leur suppression.
+        </p>
+                
+
+        <div>
+            <img src="img_pres_JDV.png" alt="" class="img">
+        </div>
+
+        <h2>Visuels</h2>
+            
+        <article class="carousel-wrapper">
+            <section class="carousel">
+                <button class="arrow left"><img src="arrow.png" alt=""></button>
+
+                <div class="card first-set">
+                    <img src="JDV_img1.png" alt="">
+                </div>
+                <div class="card second-set">
+                    <img src="JDV_img2.png" alt="">
+                </div>
+                <div class="card third-set">
+                    <img src="JDV_img3.png" alt="">
+                </div>
+                
+                <div class="card fourth-set">
+                    <img src="JDV_img4.png" alt="">
+                </div>
+
+                <button class="arrow right"><img src="arrow.png" alt=""></button>
+            </section>
+
+
+        </article>
+
+
+        
+            
+        
+    </main>
+    <script>
+        const leftBtn = document.querySelector('.arrow.left');
+        const rightBtn = document.querySelector('.arrow.right');
+        const firstSet = document.querySelectorAll('.first-set');
+        const secondSet = document.querySelectorAll('.second-set');
+        const thirdSet = document.querySelectorAll('.third-set');
+        const fourthSet = document.querySelectorAll('.fourth-set');
+        
+
+        var vari = 0;
+
+        leftBtn.style.opacity = '20%';
+        
+
+        rightBtn.addEventListener('click', () => {
+            if(vari<3){
+                vari=vari+1;
+                firstSet.forEach(card => card.style.display = 'none');
+                secondSet.forEach(card => card.style.display = 'none');
+                thirdSet.forEach(card => card.style.display = 'none');
+                fourthSet.forEach(card => card.style.display = 'none');
+                if(vari==1){
+                    secondSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }else if(vari == 2){
+                    thirdSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }else if(vari == 3){
+                    fourthSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '20%';
+                }else if(vari == 0){
+                    firstSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }
+                
+            }
+        });
+
+        leftBtn.addEventListener('click', () => {
+            if(vari>0){
+                vari=vari-1;
+                firstSet.forEach(card => card.style.display = 'none');
+                secondSet.forEach(card => card.style.display = 'none');
+                thirdSet.forEach(card => card.style.display = 'none');
+                fourthSet.forEach(card => card.style.display = 'none');
+                if(vari==0){
+                    firstSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '20%';
+                    rightBtn.style.opacity = '100%';
+                }else if(vari == 1){
+                    secondSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }else if(vari == 2){
+                    thirdSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }else if(vari == 3){
+                    fourthSet.forEach(card => card.style.display = 'flex');
+                    leftBtn.style.opacity = '100%';
+                    rightBtn.style.opacity = '100%';
+                }
+                
+            }
+        });
+    </script>
+    
+</body>
+</html>

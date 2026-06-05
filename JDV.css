@@ -1,0 +1,174 @@
+h1, h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(100, 123, 198, 0.2);
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+main{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    width: 1000px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+main > div{
+    margin-bottom: 50px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+}
+
+.arrow img{
+    height: 30px;
+}
+
+.arrow.right img{
+    transform: rotate(180deg);
+}
+
+.arrow:hover{
+    transform: scale(1.05);
+}
+
+section{
+    display: flex;
+    padding: 20px;
+    background-color: rgba(100, 123, 198, 0.458);
+    border-radius: 15px;
+    gap: 10px;
+    justify-content: space-around;
+    width: 110vh;
+    align-items: center;
+}
+
+img{
+    height: 55vh;
+    border-radius: 10px;
+    
+}
+
+.img{
+    height: 535px;
+}
+
+header ul li:last-child > a{
+    border-bottom: 2px black solid;
+}
+
+span{
+    position: absolute;
+}
+
+.c1{
+    border: solid 3px red;
+    height: 500px;
+    width: 410px;
+    left: auto;
+    margin-left: 450px;
+    top:355px;
+}
+
+.c2{
+    border: solid 3px yellow;
+    height: 450px;
+    width:445px;
+    left: auto;
+    margin-right: 415px;
+    top:355px;
+}
+
+.c3{
+    border: solid 3px violet;
+    height: 41px;
+    width: 445px;
+    margin-right: 415px;
+    left: auto;
+    top: 822px;
+}
+
+.c4{
+    border: solid 3px red;
+    width: 3vh;
+    margin-left: 895px;
+    left: auto;
+    top: 615px;
+}
+
+.c7{
+    border: solid 3px red;
+    background-color: red;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    padding-top: 3px;
+    margin-left: 1050px;
+    left: auto;
+    top: 595px;
+}
+
+.c5{
+    border: solid 3px yellow;
+    width: 3vh;
+    margin-right: 895px;
+    left: auto;
+    top: 615px;
+}
+
+.c8{
+    border: solid 3px yellow;
+    background-color: yellow;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    padding-top: 3px;
+    margin-right: 1050px;
+    left: auto;
+    top: 595px;
+}
+
+.c6{
+    border: solid 3px violet;
+    width: 3vh;
+    margin-right: 895px;
+    left: auto;
+    top: 843px;
+}
+
+.c9{
+    border: solid 3px violet;
+    background-color: violet;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    padding-top: 3px;
+    margin-right: 1050px;
+    left: auto;
+    top: 822px;
+}
+
+
+
+.first-set { display: flex; }
+.second-set { display: none; }
+.third-set{ display: none;}
+.fourth-set{ display: none;}
+
+
+
+
